@@ -14,7 +14,7 @@
         android:layout_weight="0.09" />
 
     <TextView
-        android:text="HOW MUCH"
+        android:text="@string/splash_txt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textHowmuch"
@@ -25,7 +25,7 @@
         />
 
     <TextView
-        android:text="TIME ?"
+        android:text="@string/splash_txt2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textTime"
@@ -33,5 +33,5 @@
         android:textSize="67sp"
         android:gravity="top"
         android:textColor="@android:color/white"
-        android:alpha="1" />
+        android:alpha="0" />
 </LinearLayout>
