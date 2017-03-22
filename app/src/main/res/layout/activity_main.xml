@@ -1,128 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.byethost6.thefreelancer.howmuchtime.MainActivity">
-
-    <TextView
-        android:text="@string/app_name"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:gravity="center_vertical"
-        android:textSize="24sp"
-        android:layout_height="50dp" />
+    android:gravity="center"
+    android:orientation="vertical">
 
     <ImageView
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/splashlogo"
         android:id="@+id/imageView"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:adjustViewBounds="true"
-        android:layout_width="100dp"
-        android:layout_marginTop="56dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        app:srcCompat="@drawable/splashlogo" />
 
-    <TableLayout
-        android:id="@+id/tableLayout"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-            <Button
-                android:id="@+id/mainbutton1"
-                android:layout_margin="@dimen/activity_main_margin_button"
-                android:text="@string/menu_play"
-                android:layout_height="@dimen/activity_main_height_button"
-                android:layout_width="@dimen/activity_main_width_button"
-                android:textSize="30sp"
-                tools:ignore="ButtonStyle" />
+    <Button
+        android:id="@+id/mainbutton1"
+        android:layout_width="@dimen/activity_main_width_button"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_play"
+        android:textSize="30sp"
+        tools:ignore="ButtonStyle" />
 
-            <Button
-                android:layout_height="@dimen/activity_main_height_button"
-                android:layout_width="@dimen/activity_main_width_button"
-                android:id="@+id/mainbutton2"
-                android:layout_margin="@dimen/activity_main_margin_button"
-                android:text="@string/menu_ranking"
-                android:textSize="22sp"
-                tools:ignore="ButtonStyle" />
-        </TableRow>
+    <Button
+        android:id="@+id/mainbutton2"
+        android:layout_width="@dimen/activity_main_width_button"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_ranking"
+        android:textSize="22sp"
+        tools:ignore="ButtonStyle" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+    <Button
+        android:id="@+id/mainbutton3"
+        android:layout_width="@dimen/activity_main_width_button"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_shop"
+        android:textSize="30sp"
+        tools:ignore="ButtonStyle" />
 
-            <Button
-                android:layout_height="@dimen/activity_main_height_button"
-                android:layout_width="@dimen/activity_main_width_button"
-                android:id="@+id/mainbutton3"
-                android:layout_margin="@dimen/activity_main_margin_button"
-                android:text="@string/menu_shop"
-                android:textSize="30sp"
-                tools:ignore="ButtonStyle" />
+    <Button
+        android:id="@+id/mainbutton4"
+        android:layout_width="@dimen/activity_main_width_button"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_exit"
+        android:textSize="30sp"
+        tools:ignore="ButtonStyle" />
 
-            <Button
-                android:layout_height="@dimen/activity_main_height_button"
-                android:layout_width="@dimen/activity_main_width_button"
-                android:id="@+id/mainbutton4"
-                android:layout_margin="@dimen/activity_main_margin_button"
-                android:text="@string/menu_exit"
-                android:textSize="30sp"
-                tools:ignore="ButtonStyle" />
-
-        </TableRow>
-
-    </TableLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:layout_below="@+id/tableLayout"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="16dp">
+        android:orientation="horizontal">
 
         <TextView
-            android:text="500"
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:textSize="30sp"
-            android:textColor="@color/colorPrimary"
-            android:textAlignment="center"
             android:background="@drawable/back"
             android:padding="10dp"
-            android:layout_below="@+id/tableLayout"
-            android:layout_centerHorizontal="true" />
+            android:text="500"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp" />
 
         <TextView
-            android:text="Times"
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignBottom="@+id/textView2"
-            android:layout_toRightOf="@+id/textView2"
-            android:layout_toEndOf="@+id/textView2"
-            android:id="@+id/textView3"
-            android:textSize="24sp"
-            android:textColor="@color/colorPrimary"
             android:layout_marginStart="10dp"
-            android:gravity="center_vertical" />
+            android:gravity="center_vertical"
+            android:text="Times"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

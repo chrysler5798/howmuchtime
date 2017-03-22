@@ -1,4 +1,4 @@
-package com.byethost6.thefreelancer.howmuchtime;
+package com.khrys.howmuchtime;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,4 +1,11 @@
-package com.byethost6.thefreelancer.howmuchtime;
+package com.khrys.howmuchtime;
+
+/*
+ * Created by Khrys.
+ *
+ * App : howmuchtime
+ * Info : 11/24/2016 [UNKNOWN]
+*/
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,16 +14,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import static android.R.attr.animation;
-import static android.R.transition.fade;
-import static java.lang.Thread.sleep;
-
-/**
- * Created by Chrysler on 11/24/2016.
- * <p>
- * howmuchtime
- */
 
 public class SplashActivity extends AppCompatActivity {
 
