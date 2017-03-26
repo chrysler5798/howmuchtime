@@ -4,7 +4,7 @@
     <string name="splash_txt2">TIME ?</string>
 
     <string name="menu_play">Play</string>
-    <string name="menu_ranking">Ranking</string>
+    <string name="menu_ranking">Stats</string>
     <string name="menu_shop">Shop</string>
     <string name="menu_exit">Exit</string>
 </resources>
